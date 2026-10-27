@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "duality-sale-synthesis",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-26",
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  },
+  "workflows": [
+    {
+      "name": "sale-structure-workflow",
+      "binding": "SALE_WORKFLOW",
+      "class_name": "SaleStructureWorkflow"
+    }
+  ],
+  "analytics_engine_datasets": [
+    {
+      "binding": "TELEMETRY",
+      "dataset": "duality_sale_events"
+    }
+  ]
+}
