@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "duality-sale-synthesis",
   "main": "src/index.ts",
-  "compatibility_date": "2026-10-26",
+  "compatibility_date": "2026-11-11",
   "observability": {
     "enabled": true,
     "logs": {
